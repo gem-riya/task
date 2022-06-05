@@ -21,7 +21,7 @@ const UserLogin = () => {
 
             document.getElementById('login-form').reset()  // to reset the form after giving values
             setError({ status: true, msg: "congratulations", type: 'success' })
-            navigate('/abc') //when login sucess it will route to other path 
+            navigate('/category') //when login sucess it will route to other path 
         } else {
             setError({ status: true, msg: "fill all fields", type: 'error' })
         }

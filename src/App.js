@@ -4,6 +4,7 @@ import './App.css';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import Layout from './components/Layout';
+import Category from './components/page/Category';
 import Log from './components/page/Log';
 import Login from './components/page/Login';
 function App() {
@@ -16,6 +17,9 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/log' element={<Log />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/category' element={<Category />} >
+              
+            </Route>
 
           </Route>
         </Routes>
