@@ -7,6 +7,7 @@ import Layout from './components/Layout';
 import Category from './components/page/Category';
 import Log from './components/page/Log';
 import Login from './components/page/Login';
+import Men from './components/page/Men';
 function App() {
   return (
     <>
@@ -18,8 +19,10 @@ function App() {
             <Route path='/log' element={<Log />} />
             <Route path='/login' element={<Login />} />
             <Route path='/category' element={<Category />} >
-              
+              <Route path='mens' element={<Men />} />
             </Route>
+
+
 
           </Route>
         </Routes>
