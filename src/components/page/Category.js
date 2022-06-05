@@ -8,7 +8,7 @@ const Category = (match, location, history) => {
             <h1 style={{ backgroundColor: "pink" }}>CATEGORY</h1>
             <ul >
                 <nav>
-                    <li ><Link to='men'>Men</Link></li>
+                    <li ><Link to='mens'>Men</Link></li>
                     <li><Link to={`${match.path}/women`}>Women</Link></li>
                     <li><Link to={`${match.path}/kids`}>Kids</Link></li>
                     <li><Link to={`${match.path}/homedecor`}>HomeDecor</Link></li>
