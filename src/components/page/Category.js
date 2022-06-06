@@ -9,34 +9,21 @@ const Category = (match, location, history) => {
             <ul >
                 <nav>
                     <li ><Link to='mens'>Men</Link></li>
-                    <li><Link to={`${match.path}/women`}>Women</Link></li>
-                    <li><Link to={`${match.path}/kids`}>Kids</Link></li>
+                    <li><Link to='women'>Women</Link></li>
+                    <li><Link to='kids'>Kids</Link></li>
                     <li><Link to={`${match.path}/homedecor`}>HomeDecor</Link></li>
                 </nav>
-                <Outlet />
+                 <Outlet />
+                
             </ul>
 
-            {/* <Routes>
-            <Route path= {`${match.path}/men`} element={<Mens/>} />
-        </Routes>  */}
         </>
     );
 }
 
 export default Category;
 
-//  function men(){
-//     return(
-//         <>
 
-//              <p>hi</p>
-//              <nav>
-//              <Link to="s">S</Link>
-//              </nav>
-//              <Outlet/>
-//         </>
-//      );
-//     }
 
 
 

@@ -8,6 +8,8 @@ import Category from './components/page/Category';
 import Log from './components/page/Log';
 import Login from './components/page/Login';
 import Men from './components/page/Men';
+import Women from './components/page/Women';
+import Kids from './components/page/Kids';
 function App() {
   return (
     <>
@@ -20,6 +22,8 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/category' element={<Category />} >
               <Route path='mens' element={<Men />} />
+              <Route path='women' element={<Women/>} />
+              <Route path='kids' element={<Kids/>} />
             </Route>
 
 

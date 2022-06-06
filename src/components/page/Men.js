@@ -1,10 +1,16 @@
 import React from 'react'
+import shirt from '../../images/shirt.jpg'
 
 const Men = () => {
   return (
-    <div>
+    <>
       men's collection
-    </div>
+      <ul>
+          <li >
+              <img src = {shirt} width="180" height="200"shirts />
+          </li>
+      </ul>
+    </>
   );
 }
 
