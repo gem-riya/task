@@ -1,22 +1,31 @@
 import React from 'react'
-import { Link, Outlet, Route, Routes } from 'react-router-dom';
+import { Link,   Route, useMatch } from 'react-router-dom';
+import Cat from './components/page/Cat';
 
-const Category = (match, location, history) => {
-    // console.log(props);
+const Category = () => {
+    const {url, path} = useMatch();
+
+    
     return (
         <>
             <h1 style={{ backgroundColor: "pink" }}>CATEGORY</h1>
+            
+            
+                <Route path={path}>
+                
+        
             <ul >
                 <nav>
-                    <li ><Link to='mens'>Men</Link></li>
-                    <li><Link to='women'>Women</Link></li>
-                    <li><Link to='kids'>Kids</Link></li>
-                    <li><Link to={`${match.path}/homedecor`}>HomeDecor</Link></li>
+                    <li ><Link to={`${url}/121`}>Men</Link></li>
+                     <li><Link to={`${url}/123`}>Women</Link></li>
+                    <li><Link to={`${url}/122`}>Kids</Link></li> 
+                    
                 </nav>
-                 <Outlet />
+                
                 
             </ul>
-
+            </Route>
+            <Route path={`${path}/:id`} element={<Cat />} />
         </>
     );
 }
